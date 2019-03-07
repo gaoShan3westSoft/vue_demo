@@ -4,9 +4,6 @@
     <!-- <HelloWorld/> -->
     <!-- <Button type="primary">Primary</Button> -->
     <MuseNavi/>
-    <div>
-
-    </div>
   </div>
 </template>
 

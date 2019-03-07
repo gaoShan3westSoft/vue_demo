@@ -39,10 +39,10 @@
 <script>
 import addComment from './addComment'
 export default {
-  name: "MuseNavi",
-  data() {
+
+  data () {
     return {
-    };
+    }
   },
 
   components: {
@@ -54,9 +54,8 @@ export default {
   mounted: {},
 
   methods: {
-  
   }
-};
+}
 </script>
 
 <style>

@@ -21,41 +21,39 @@
           </FormItem>
         </Form>
       </Col>
-      <Col span="14" class="addComment">评论列表
-        
-      </Col>
+      <Col span="14" class="addComment">评论列表</Col>
     </Row>
   </div>
 </template>
 
 <script>
 export default {
-  name:'addComment',
-  data() {
+  name: 'addComment',
+  data () {
     return {
-      commentUser: "",
-      commentDetail: "",
+      commentUser: '',
+      commentDetail: '',
       formValidate: {
-        name: "",
-        commentDetail: ""
+        name: '',
+        commentDetail: ''
       },
       ruleValidate: {
         name: [
           {
             required: true,
-            message: "The name cannot be empty",
-            trigger: "blur"
+            message: 'The name cannot be empty',
+            trigger: 'blur'
           }
         ],
         commentDetail: [
           {
             required: true,
-            message: "Mailbox cannot be empty",
-            trigger: "blur"
+            message: 'Mailbox cannot be empty',
+            trigger: 'blur'
           }
         ]
       }
-    };
+    }
   },
 
   components: {},
@@ -65,18 +63,19 @@ export default {
   mounted: {},
 
   methods: {
-    handleSubmit(name) {
+    handleSubmi (name) {
       this.$refs[name].validate(valid => {
         if (valid) {
-          this.$Message.success("Success!");
+          this.$Message.success('Success!')
         } else {
-          this.$Message.error("Fail!");
+          this.$Message.error('Fail!')
         }
-      });
+      })
     }
   }
-};
+}
 </script>
+
 <style >
 .addComment {
   background-color: aquamarine;
